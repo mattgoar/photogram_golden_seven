@@ -1,0 +1,24 @@
+<h1>You have Edited Photo # <%= @photo.id %> </h1>
+
+<a href="http://localhost:3000/photos/">Return to Photos</a>
+
+<p><i><%= @changes %></i></p>
+
+<table>
+   <tr>
+   <td>
+      <img src="<%= @photo.source %>" width = 720px;>
+    </td>
+    </tr>
+    <tr>
+    <td>
+
+      <p><%= @photo.caption %></p>
+    </td>
+    </tr>
+</table>
+
+<a href="http://localhost:3000/photos/<%= @photo.id %>">Show</a>
+<a href="http://localhost:3000/photos/<%= @photo.id %>/edit">Edit</a>
+<a href="http://localhost:3000/delete_photo/<%= @photo.id %>">Delete</a>
+
